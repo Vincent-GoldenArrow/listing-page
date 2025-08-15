@@ -7,12 +7,14 @@ import RoundDetails from "./components/round-details";
 
 export default function Sidebar(){
     return(
-        <Card className= " bg-neutral-900 text-white border-0 lg:h-full lg:w-130 sm:w-80 gap-0">
-            <CardHeader className="text-center">
-                <CardTitle className="text-yellow-500 font-bold tracking-normal lg:text-7xl lg:pt-8 sm:text-4xl sm:pt-0 border-0">
+        <Card className= " bg-neutral-900 text-white border-0 md:h-full md:w-120 w-55 gap-0">
+            <CardHeader className="text-center md:gap-2 gap-0">
+                <CardTitle className="text-yellow-500 font-bold tracking-normal md:text-7xl md:pt-8 text-3xl pt-0">
                     {gameTitle.title}    
                 </CardTitle>
-                <p className=" leading-none border-0 m-0 font-bold lg:text-3xl sm:text-xl sm:pt-0">{gameTitle.subTitle}</p>
+                <p className=" leading-none m-0 font-bold md:text-3xl text-md pt-0">
+                    {gameTitle.subTitle}
+                </p>
             </CardHeader>
             <CardContent>           
                     <RoundDetails/>         

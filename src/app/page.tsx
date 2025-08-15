@@ -8,12 +8,12 @@ export default function Page() {
   return (
     <div className="h-screen w-full bg-neutral-900 text-white overflow-hidden flex justify-between pr-30">
       {/* Sidebar */}
-      <div>
+      <div className="">
         <Sidebar/>
       </div>
 
       {/* Header */}
-      <div className="pt-10">
+      <div className="md:pt-10 sm:pt-0">
         <MainContent/>
       </div>
     </div>
